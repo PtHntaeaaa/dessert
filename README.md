@@ -1,2 +1,2 @@
 # dessert
-脚本Wget目标
+自己制作的一个sh脚本
