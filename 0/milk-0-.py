@@ -57,3 +57,4 @@ if __name__ == "__main__":
         asyncio.run(main(args.url, args.concurrency, args.duration))
     except KeyboardInterrupt:
         sys.exit("\n手动中断")
+#仅供测试
