@@ -31,6 +31,14 @@ confirm_continue() {
     done
 }
 
+confirm_continue
+
+echo "继续执行..."
+apt update
+apt upgrade -y
+apt -y install python3 wget unzip nmap git vim nano htop zsh eza emacs tree curl iproute2 fzf neofetch
+neofetch
+
 eat_dessert() {
     while true; do
         read -p "要吃甜点吗？[Y/n, 回车默认n不吃] : " choice
@@ -80,14 +88,6 @@ eat_dessert() {
 }
 
 eat_dessert
-
-confirm_continue
-
-echo "继续执行..."
-apt update
-apt upgrade -y
-apt -y install python3 wget unzip nmap git vim nano htop zsh eza emacs tree curl iproute2 fzf neofetch
-neofetch
 
 confirm_clear() {
     read -rp "全家桶安装完成，是否确认执行 clear? [Y/N] 回车不执行 : " answer
